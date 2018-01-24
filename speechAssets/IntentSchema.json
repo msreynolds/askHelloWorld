@@ -1,11 +1,3 @@
-/**
- * Created by Matt Reynolds (matt@mtnlabs.com).
- * Mountain Labs, LLC 2017
- *
- * Project: ASKJaws
- * Plugin for the JAWS screen reader to ask for the keyboard shortcuts for all JAWs actions
- */
-
 {
   "intents": [
     {
@@ -28,10 +20,3 @@
     }
   ]
 }
-
-/**
- * Custom Slot Values
- * LIST_OF_LAYOUTS
- * desktop
- * laptop
-*/

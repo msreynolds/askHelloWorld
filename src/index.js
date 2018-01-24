@@ -9,7 +9,6 @@
 
 require('dotenv').load();
 
-var fs = require('fs');
 var Alexa = require('alexa-sdk');
 const util = require('util');
 
@@ -23,7 +22,7 @@ exports.handler = function (event, context) {
 var handlers = {
     'LaunchRequest': function () {
         console.log('Launch Request Intent');
-        this.emit(':tell', 'This is the help intent handler.');
+        this.emit(':tell', 'This is the launch intent handler.');
     },
     'SessionStartedRequest': function () {
         console.log('Session Started Intent');
@@ -46,19 +45,20 @@ var handlers = {
     'CustomHelloWorldIntent': function () {
         console.log(util.inspect(this.event.request, {showHidden: false, depth: null}));
 
-        var repromptText = "";
-
         var slotName = this.event.request.intent.slots.TheSlotName.value;
-        var speechOutput = 'A ' + slotName + ' says mooo';
 
-        this.emit(':tell', speechOutput, repromptText);
+        var sound = 'moo'; // default for a cow
 
-        //this.response.speak(speechOutput).listen(repromptText);
-        //this.emit(':responseReady');
+        if (slotName === 'pig') {
+            sound = 'oink oink!'
+        } else if (slotName === 'chicken') {
+            sound = 'caw caw!'
+        } else if (slotName === 'developer') {
+            sound = 'I like money';
+        }
+
+        var speechOutput = 'A ' + slotName + ' says ' + sound;
+
+        this.emit(':tell', speechOutput);
     }
 };
-
-
-/**
- * Behavior Functions
- */

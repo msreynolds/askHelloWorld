@@ -1,1 +1,4 @@
 CustomHelloWorldIntent Do you know what sound a {cow|TheSlotName} makes
+CustomHelloWorldIntent Do you know what sound a {pig|TheSlotName} makes
+CustomHelloWorldIntent Do you know what sound a {chicken|TheSlotName} makes
+CustomHelloWorldIntent Do you know what sound a {developer|TheSlotName} makes
