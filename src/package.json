@@ -1,0 +1,21 @@
+{
+  "name": "askHelloWorld",
+  "version": "1.0.0",
+  "description": "An Amazon Alexa Skill for the humble developer",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/msreynolds/askHelloWorld.git"
+  },
+  "author": "msreynolds",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msreynolds/askHelloWorld/issues"
+  },
+  "homepage": "https://github.com/msreynolds/askHelloWorld",
+  "dependencies": {
+    "alexa-sdk": "^1.0.0",
+    "util": "0.10.3",
+    "dotenv": "^1.2.0"
+  }
+}

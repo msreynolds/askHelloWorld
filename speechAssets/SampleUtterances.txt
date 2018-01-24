@@ -1,0 +1,1 @@
+CustomHelloWorldIntent Do you know what sound a {cow|TheSlotName} makes
