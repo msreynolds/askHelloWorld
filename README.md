@@ -11,8 +11,8 @@ URL: https://github.com/msreynolds/askHelloWorld
 
 Usage:
 ```
-echo user: "Alexa, ask hello world What is the most fun a developer can have?
-Alexa: "The most fun a developer can have is working for Charter"
+echo user: "Alexa, ask hello world Do you know what sound a cow makes?
+Alexa: "A cow says moo"
 ```
 
 Instructions:
